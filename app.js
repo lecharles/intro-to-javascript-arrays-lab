@@ -132,6 +132,42 @@ const hasSoup = foods.includes('soup');
 console.log(`The answer to the question does the foods array contain 'soup'? is ${hasSoup}`); // For verification
 console.log('Exercise 10 result:', hasSoup);
 
+/*
+Exercise 11: Odd numbers from an array
+1) Choose a method to iterate through the `nums` array.
+2) Push each odd number to a new array named `odds`.
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+Complete Exercise 11 in the space below:
+*/
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+// iterate through nums array using for loop and console log each number
+for (let index = 0; index < nums.length; index++) {
+  console.log(`using for loop nums[${index}] = ${nums[index]}`);
+}
+
+// iterate through nums array using for...of and console log each number
+for (const num of nums) {
+  console.log(`using for...of num = ${num}`);
+}
+
+// iterate through nums array using forEach and console log each number
+nums.forEach(num => {
+  console.log(`using forEach num = ${num}`);
+});
+
+// create odds array by iterating through nums array using for loop and picking odd numbers 
+const odds = [];
+for (let index = 0; index < nums.length; index++) {
+  if (nums[index] % 2 !== 0) { // because by definition, an odd number is not divisible by 2
+    odds.push(nums[index]);
+  }
+}
+
+console.log('Exercise 11 result:', odds);
+
+
 
 
 
