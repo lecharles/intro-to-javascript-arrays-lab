@@ -77,6 +77,25 @@ foods.splice(pizzaElementPosition, 1, 'sushi', 'cupcake'); // At pizzaElementPos
 
 console.log('Exercise 6 result:', foods);
 
+/*
+Exercise 7: Using the `slice()` method
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+2) Assign it to a variable named `yummy`.
+Complete Exercise 7 in the space below:
+*/
+console.log(foods); // To see the current state of the foods array
+
+const sushiIndex = foods.indexOf('sushi');
+const cupcakeIndex = foods.indexOf('cupcake');
+
+// Using slice here because it is a method on the Array object that 
+// returns a copy of a portion of an array into a new array object 
+// selected from start to end (end not included).
+const yummy = foods.slice(sushiIndex, cupcakeIndex + 1); // +1 to include 'cupcake'
+
+console.log('Exercise 7 result:', yummy);
+
 
 
 
