@@ -22,6 +22,18 @@ foods.push('pizza');
 foods.push('cheeseburger');
 console.log('Exercise 2 result:', foods);
 
+/*
+Exercise 3: Insert at the beginning
+1) Insert the string 'taco' at the beginning of the `foods` array.
+Complete Exercise 3 in the space below:
+*/
+
+// Using unshift here because it is a method on the Array object that 
+// adds this element to the beginning of an array and returns the new length of the array.
+foods.unshift('taco');
+console.log('Exercise 3 result:', foods);
+
+
 
 
 
