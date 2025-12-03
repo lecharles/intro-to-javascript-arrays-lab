@@ -270,6 +270,32 @@ console.log(`Verification: numVerification = ${numVerification}`); // should log
 
 console.log('Exercise 14 result:', num);
 
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within `numArrays` nested arrays.
+   
+2) Assign the sum to a variable called `total`.
+
+Hint: Be sure to declare and initialize the total variable before the iterations.
+
+Complete Exercise 15 in the space below:
+*/
+
+console.log(numArrays); // To see the current state of the numArrays array
+
+let total = 0;
+
+// Using nested forEach to iterate through numArrays and sum up all numbers
+numArrays.forEach(nestedArray => { // iterate through each nested array
+  nestedArray.forEach(elementOnNestedArray => { // iterate through each element of the nested array
+    total = total + elementOnNestedArray; // add each element of the nested array to total
+  });
+});
+
+console.log('Exercise 15 result:\n', total);
+
+
 
 
 
