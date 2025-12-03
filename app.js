@@ -33,6 +33,28 @@ Complete Exercise 3 in the space below:
 foods.unshift('taco');
 console.log('Exercise 3 result:', foods);
 
+/*
+Exercise 4: Access an array element
+1) Retrieve the 'pizza' string from the array based on its position (index) in
+   the array.  
+2) Assign it to a variable called `favFood`.
+Complete Exercise 4 in the space below:
+*/
+
+console.log(foods); // To see the current state of the foods array
+
+// findout index of 'pizza' in the foods array
+const pizzaIndex = foods.indexOf('pizza');
+
+const favFood = foods[1]; // 'pizza' is at index 1 after adding 'taco' at the beginning
+const favFoodUsingIndexOf = foods[pizzaIndex]; // Alternative way using indexOf
+
+console.log('favFood using indexOf:', favFoodUsingIndexOf);
+console.log('Exercise 4 result:', favFood);
+
+
+
+
 
 
 
