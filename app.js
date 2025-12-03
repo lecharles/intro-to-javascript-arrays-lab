@@ -52,6 +52,18 @@ const favFoodUsingIndexOf = foods[pizzaIndex]; // Alternative way using indexOf
 console.log('favFood using indexOf:', favFoodUsingIndexOf);
 console.log('Exercise 4 result:', favFood);
 
+/*
+Exercise 5: Insert an element between two others
+1) Insert the string 'tofu' between 'pizza' and 'cheeseburger' in the array.
+Complete Exercise 5 in the space below:
+*/
+
+// Using splice here because it is a method on the Array object that 
+// changes the contents of an array by removing or replacing existing elements 
+// and/or adding new elements in place.
+foods.splice(2, 0, 'tofu'); // At index 2, remove 0 elements, add 'tofu'
+
+console.log('Exercise 5 result:', foods);
 
 
 
