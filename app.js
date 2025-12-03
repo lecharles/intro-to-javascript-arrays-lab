@@ -107,6 +107,21 @@ const soyIdx = foods.indexOf('tofu');
 console.log(`The index of 'tofu' in the foods array is: ${soyIdx}`); // For verification
 console.log('Exercise 8 result:', soyIdx);
 
+/*
+Exercise 9: Joining elements
+1) Use the `join()` method to concatenate the strings in the `foods` array, separated by ' -> '. 
+2) Assign the result to a variable called `allFoods`. 
+Note: The final result should log as: 'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+Complete Exercise 9 in the space below:
+*/
+
+console.log(foods); // To see the current state of the foods array
+
+const allFoods = foods.join(' -> ');
+
+console.log('Exercise 9 result:', allFoods); // there's a space after result: because the joined string includes spaces
+
+
 
 
 
