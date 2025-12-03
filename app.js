@@ -65,6 +65,19 @@ foods.splice(2, 0, 'tofu'); // At index 2, remove 0 elements, add 'tofu'
 
 console.log('Exercise 5 result:', foods);
 
+/*
+Exercise 6: Replace elements
+1) Replace 'pizza' in the `foods` array with 'sushi' and 'cupcake'.
+Complete Exercise 6 in the space below:
+*/
+
+// Using splice here again because it allows us to replace elements in the array.
+const pizzaElementPosition = foods.indexOf('pizza');
+foods.splice(pizzaElementPosition, 1, 'sushi', 'cupcake'); // At pizzaElementPosition, remove 1 element, add 'sushi' and then 'cupcake'
+
+console.log('Exercise 6 result:', foods);
+
+
 
 
 
