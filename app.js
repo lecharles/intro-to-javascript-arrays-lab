@@ -237,6 +237,40 @@ console.log('The last nested array in numArrays is:', numList); // For verificat
 
 console.log('Exercise 13 result:', numList);
 
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+
+2) Assign it to a variable called `num`.
+
+Complete Exercise 14 in the space below:
+*/
+
+console.log(numArrays); // To see the current state of the numArrays array
+// '66' is located in the 3rd nested array (index 2) and is the 2nd element (index 1) in that array
+const num = numArrays[2][1]; // we're doing this manually here
+
+// now, let's use includes() to find which nested array contains 66 and use for loop to log the index of that nested array
+for (let index = 0; index < numArrays.length; index++) {
+  if (numArrays[index].includes(66)) {
+    console.log(`66 is found in nested array at index ${index}:`, numArrays[index]);
+  }
+}
+
+// now, let's use indexOf to find the index of 66 in its nested array
+const nestedArrayWith66 = numArrays[2];
+const indexOf66InNestedArray = nestedArrayWith66.indexOf(66);
+console.log(`The index of 66 in its nested array is: ${indexOf66InNestedArray}`); // For verification
+
+// finally, let's use nestedArrayWith66 and indexOf66InNestedArray to get 66 for verification
+const numVerification = nestedArrayWith66[indexOf66InNestedArray];
+console.log(`Verification: numVerification = ${numVerification}`); // should log 66
+
+console.log('Exercise 14 result:', num);
+
+
 
 
 
